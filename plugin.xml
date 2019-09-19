@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-squarePOS" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SquarePOS</name>
+
+    <js-module name="SquarePOS" src="www/SquarePOS.js">
+        <clobbers target="SquarePOS" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SquarePOS">
+                <param name="ios-package" value="SquarePOS" />
+            </feature>
+        </config-file>
+        <!-- Add in the plugin .swift files here -->
+        <header-file src="src/ios/SquarePOS.h" />
+        <source-file src="src/ios/SquarePOS.m" />
+    </platform>
+</plugin>
