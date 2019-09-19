@@ -1,5 +1,5 @@
 {
-    "name": "SquarePOS", 
+    "name": "cordova-plugin-squarePOS", 
     "version": "0.0.1", 
     "description": "Square POS for Ionic", 
     "cordova": {
@@ -7,6 +7,10 @@
       "platforms": [ 
         "ios" 
       ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jaganreddy314/cordova-plugin-squarePOS.git"
     },
     "keywords": [ 
       "cordova",
